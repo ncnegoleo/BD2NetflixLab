@@ -2,11 +2,18 @@
 <persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
   <persistence-unit name="netflixlab_pu" transaction-type="RESOURCE_LOCAL">
     <provider>org.hibernate.ejb.HibernatePersistence</provider>
-    <class>com.bd2.entiies.Pessoa</class>
+    <class>com.bd2.entiies.Conta</class>
+    <class>com.bd2.entiies.Perfil</class>
+    <class>com.bd2.entiies.Midia</class>
+    <class>com.bd2.entiies.Genero</class>
+    <class>com.bd2.entiies.Ator</class>
+    <class>com.bd2.entiies.Filme</class>
+    <class>com.bd2.entiies.Capitulo</class>
+    <class>com.bd2.entiies.Temporada</class>
+    <class>com.bd2.entiies.Seriado</class>
     <properties>
-      <property name="hibernate.show_sql" value="true" />  
-      <property name="hibernate.format_sql" value="true" />
-        
+      <property name="hibernate.show_sql" value="true"/>
+      <property name="hibernate.format_sql" value="true"/>
       <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/netflix_db"/>
       <property name="javax.persistence.jdbc.user" value="postgres"/>
       <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
